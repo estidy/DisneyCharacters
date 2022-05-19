@@ -1,0 +1,97 @@
+@charset "ISO-8859-1";
+/* FONTS */
+@font-face {
+  font-family: 'aesthetic';
+  src: url('/fonts/Aesthetic.ttf') format('truetype')
+}
+@font-face {
+  font-family: 'whiteStorm';
+  src: url('/fonts/WhiteStorm.otf') format('truetype')
+}
+@font-face {
+  font-family: 'pacifico';
+  src: url('/fonts/PacificoRegular.ttf') format('truetype')
+}
+/*#sectionIndex{
+	width:100%;
+	display:block;
+	height:600px;
+}
+
+/* FORM LOGIN */
+/*.cardLogin{
+position:relative;
+   width: 50%;
+  left:25%;
+  top:25%;
+	z-index:1;	
+    border-radius: 10px;
+    box-shadow: -3px -3px 9px #aaa9a9a2,
+              3px 3px 7px rgba(147, 149, 151, 0.671);
+    border:1px solid #191919;
+    opacity: 0.8;
+}
+/* CAROUSEL INDEX*/
+/*.carrusel{
+    left:0;
+    top:0;
+	z-index:0;
+	position:absolute;
+}*/
+
+.carousel img{
+	max-height:350px;
+	object-fit: cover;
+}
+
+#formLogin label{
+	font-size:18px;
+    text-shadow:0 1px 0 black;
+}
+#formLogin .sign{
+	font-size:1.5em;
+	font-family:'aesthetic';
+}  
+.cardLogin h3{
+	font-size:2em;
+	font-family:'pacifico';
+    text-shadow:0 1px 0 black;
+}
+@media only screen and (min-width: 800px){
+	#sectionIndex{
+		width:100%;
+		display:block;
+		height:600px;
+	}
+	#sectionIndex .card{
+	   background: rgba(0, 0, 0, 0.6);
+    }
+    #formLogin {
+        color:white;
+    }
+    .cardLogin h3{
+	color:white;
+    }  
+	.cardLogin{
+	   position:relative;
+	   width: 50%;
+	   left:25%;
+	   top:25%;
+	   z-index:1;	
+	   border-radius: 10px;
+	   box-shadow: -3px -3px 9px #aaa9a9a2,
+	              3px 3px 7px rgba(147, 149, 151, 0.671);
+	    border:1px solid #191919;
+	    opacity:0.8;
+    }
+	.carrusel{
+	    left:0;
+	    top:0;
+		z-index:0;
+		position:absolute;
+		max-height:600px;
+	}
+	.carousel img{
+		max-height:600px;
+	}
+}

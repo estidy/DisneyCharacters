@@ -1,10 +1,34 @@
 <!DOCTYPE html>
-<html>
-<head>
-<meta charset="ISO-8859-1">
-<title>Insert title here</title>
-</head>
+<html lang="en" xmlns:th="http//www.thymeleaf.org">
+<head th:replace="layout/layout::headIndex"></head>
 <body>
-      <h1>HOLA MUNDO</h1>
+ <section id="sectionIndex">
+    <div  th:insert="fragments/carrouselIndex.html" class="text-light carrusel container-fluid px-0" > </div>
+   <div class="card cardLogin">
+	   <div class="card-header text-center">
+		    <h3>Iniciar Sesion</h3>
+	   </div>
+	   <div class="card-body"> 
+		   <form id=formLogin>
+			  <div class="row mb-3">
+			    <label for="username" class="col-sm-2 col-form-label">Usuario</label>
+			    <div class="col-sm-10 d-flex align-items-center">
+			      <i class="far fa-envelope fa-lg"></i> <input type="text" class="form-control" name="username" id="username">
+			    </div>
+			  </div>	  
+			  <div class="row mb-3">
+			    <label for="password" class="col-sm-2 col-form-label">Password</label>
+			    <div class="col-sm-10 d-flex align-items-center">
+			      <i class="fas fa-unlock-alt fa-lg"></i><input type="password" class="form-control" name="password" id="password">
+			    </div>
+			  </div>
+			  <div class="col-sm-6 mx-auto">
+			     <button type="submit" class="btn btn-warning w-100 sign">Entrar</button>
+			  </div> 		      
+			</form>
+	   </div>
+   </div>
+ </section>
+ <footer th:replace="layout/layout::footerIndex"></footer>
 </body>
 </html>

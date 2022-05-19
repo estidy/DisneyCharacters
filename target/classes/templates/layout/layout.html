@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en" 
+      xmlns="http//www.w3.org/1999/xhtml"
+      xmlns:th="http//www.thymeleaf.org"
+      xmlns:sec="http://www.thymeleaf.org/extras/spring-security">
+	<head th:fragment="headIndex">
+	    <meta charset="UTF-8">
+	    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	    <meta name="viewport" content="width=|, initial-scale=1.0">
+	    <link rel="stylesheet" th:href="@{/css/styles.css}">
+	    <link rel="stylesheet" th:href="@{/css/bootstrap.min.css}">
+	    <!-- <link rel="stylesheet" th:href="@{/webjars/font-awesome/css/all.css}">-->
+		<title th:text="${title}"></title>
+	</head>
+	<body>
+	  	<div id="containerIndex" class="container-fluid">
+			<!-- CONTENIDO DINAMICO  -->
+			<main id="contentIndex">
+			</main>		
+		</div>		
+		<!-- PIE DE PAGINA  -->
+		<footer th:fragment="footerIndex" id="footerIndex" class="container-fluid bg-dark text-light">			
+			    <div th:insert="fragments/footerIndex.html" class="row text-center text-light">	</div>
+				<script type="text/javascript" th:src="@{js/bootstrap.bundle.min.js}"></script>
+		</footer>
+
+	</body>
+</html>
